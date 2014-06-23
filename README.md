@@ -1,8 +1,8 @@
 ##Coursera Data Science Project
-==============================
+-------------------------------
 
 ######Author: Henri MBIYA-NGANDU LUBOYA <hmbiyangandu@yahoo.fr>
-
+------
 This project consist of merging a couple of datasets into one dataset and processing some operations 
 to get a final sub-dataset that contains the average of each variable for each activity and each subject. 
 
@@ -94,7 +94,7 @@ In this case we need to clean only the labels in V2 column and reassign the clea
 At this step the two datasets have each one all the necessary information bound in the right way and order,
 according to how informations have been provided in two separate sets (training and test). As the two datasets have 
 the same number of columns and same labels, we can now merge them without any apprehension. 
-For that, the "rbind" function seem to the one that fits well 
+For that, the "rbind" function seem to the one that fits well
 
 	mergeData <- rbind(dataTrain,dataTest)
 
