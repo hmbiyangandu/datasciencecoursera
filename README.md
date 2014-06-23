@@ -105,10 +105,24 @@ We can though use that vector to exclude all the column in mergeData where the v
 
 	mergeData <- mergeData[,grepl("mean|std",features$V2, ignore.case=T)]
 
-# Labeling Activities in the Dataset
-mergeData <- merge(mergeData,activityLabels, by.x="activity_id", by.y="activity_id", all=T)
+9. Labeling Activities in the Dataset
+Here we use "merge" function by joining the mergeData we get above Step 7 and the activityLabels we read in the actvity_labels.txt
+The pivot column on which the join is done is activity_id, which actually is in the two dataframe, we also need set the parameter all=TRUE
+to get an inner join
 
-# Creating tidy dataset with the average of each variable for each activity and each subject
-tidyData <- ddply(mergeData, .(activity,subject_id), numcolwise(mean))
-write.table(tidyData,"tidyData.txt", row.names = FALSE)
+	mergeData <- merge(mergeData,activityLabels, by.x="activity_id", by.y="activity_id", all=T)
+
+10. Creating tidy dataset with the average of each variable for each activity and each subject
+This is the step where the library we load get into the play. We need from this package the function "ddply" which help in summarizing
+dataframe. The parameter to provide are : the dataset to be processed, the columns on which to make the aggregation and the operation to
+be processed (in this case, the mean only on numeric columns in the dataset), the result in assigned to the variable tidyData.
+
+	tidyData <- ddply(mergeData, .(activity,subject_id), numcolwise(mean))
+	
+11. Writing the tidy Dataset
+As CSV file are not accepted to be uploaded on Coursera, we choose write.table to produce a txt file with space as fields separation character.
+This is the final output file asked as per the specifications in the project. The file is also written in the working directory.
+Parameter are : the dataset to write, the destination path for the file and the third parm which avoid producing names of columns (Not necessary here) 
+	
+	write.table(tidyData,"tidyData.txt", row.names = FALSE)
 
