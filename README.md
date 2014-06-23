@@ -1,7 +1,7 @@
-#Coursera Data Science Project
+##Coursera Data Science Project
 ==============================
 
-# Author: Henri MBIYA-NGANDU LUBOYA <hmbiyangandu@yahoo.fr>
+###Author: Henri MBIYA-NGANDU LUBOYA <hmbiyangandu@yahoo.fr>
 
 This project consist of merging a couple of datasets into one dataset and processing some operations 
 to get a final sub-dataset that contains the average of each variable for each activity and each subject. 
@@ -49,23 +49,23 @@ and the file containing activities IDs and labels. This is to facilitate things 
 3. Reading data from above files and assigning them to variables in the environment.
 Considering that data are note CSV, the "read.table" functions goes well in all cases.
 
-* Reading data on Training and Test in X_train.txt and X_test.txt files in the respective sub-directory
-	dataTrain <- read.table(dataTrainFile, colClasses="numeric")
-	dataTest <- read.table(dataTestFile, colClasses="numeric")
+	* Reading data on Training and Test in X_train.txt and X_test.txt files in the respective sub-directory
+		dataTrain <- read.table(dataTrainFile, colClasses="numeric")
+		dataTest <- read.table(dataTestFile, colClasses="numeric")
 
-* Reading activies IDs on Training and Test in y_train.txt and y_test.txt files in the respective sub-directory
-	activityTrain <- read.table(activityTrainFile,col.names=c("activity_id"))
-	activityTest <- read.table(activityTestFile,col.names=c("activity_id"))
+	* Reading activies IDs on Training and Test in y_train.txt and y_test.txt files in the respective sub-directory
+		activityTrain <- read.table(activityTrainFile,col.names=c("activity_id"))
+		activityTest <- read.table(activityTestFile,col.names=c("activity_id"))
 
-* Reading subjects ID on Training and Test dataset in subject_train.txt and subject_test.txt files  in the respective sub-directory
-	subjectTrain <- read.table(subjectTrainFile, col.names=c("subject_id"))
-	subjectTest <- read.table(subjectTestFile, col.names=c("subject_id"))
+	* Reading subjects ID on Training and Test dataset in subject_train.txt and subject_test.txt files  in the respective sub-directory
+		subjectTrain <- read.table(subjectTrainFile, col.names=c("subject_id"))
+		subjectTest <- read.table(subjectTestFile, col.names=c("subject_id"))
 
-* Reading Activity Labels for both Train and Test Datasets in activity_labels.txt file
-	activityLabels <- read.table(activityLabelsFile, col.names=c("activity_id","activity"))
+	* Reading Activity Labels for both Train and Test Datasets in activity_labels.txt file
+		activityLabels <- read.table(activityLabelsFile, col.names=c("activity_id","activity"))
 
-* Reading features attributs for both Train and Test Datasets in features.txt file
-	features <- read.table(featuresFIle)
+	* Reading features attributs for both Train and Test Datasets in features.txt file
+		features <- read.table(featuresFIle)
 
 4. Cleaning columns names to avoid mis-interpretation in future manipulation of columns names in R operations.
 We will particularly remove "(" and ")" and replace "-" and "," by "_", the gsub function can do it well.
@@ -82,13 +82,13 @@ In this case we need to clean only the labels in V2 column and reassign the clea
 
 6. Binding respective activity ID and subject ID at each dataset (training and test)
 
-* Adding Activity columns on dataTrain and dataTest datasets
-	dataTrain <- cbind(dataTrain,activityTrain)
-	dataTest <- cbind(dataTest,activityTest)
+	* Adding Activity columns on dataTrain and dataTest datasets
+		dataTrain <- cbind(dataTrain,activityTrain)
+		dataTest <- cbind(dataTest,activityTest)
 
-* Adding Subject columns on dataTrain and dataTest dataset
-	dataTrain <- cbind(dataTrain,subjectTrain)
-	dataTest <- cbind(dataTest,subjectTest)
+	* Adding Subject columns on dataTrain and dataTest dataset
+		dataTrain <- cbind(dataTrain,subjectTrain)
+		dataTest <- cbind(dataTest,subjectTest)
 
 7. Merging Training and Test datasets
 At this step the two datasets have each one all the necessary information bound in the right way and order,
