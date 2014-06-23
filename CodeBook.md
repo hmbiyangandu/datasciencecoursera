@@ -22,57 +22,57 @@ All the data we need will be provided by the following files:
 * 'test/X_test.txt': Test set.
 * 'test/y_test.txt': Test labels. 
 
-The project have been developed under R version 3.1.0 (2014-04-10), Platform: x86_64-w64-mingw32/x64 (64-bit)
+The project have been developed under R version 3.1.0 (2014-04-10), Platform: x86_64-w64-mingw32/x64 (64-bit).
 
 ## Code Book
 ------------
 
 1-  activity
-	Names of activity performed in the experiment
-	Possible values : WALKING, SITTING, STANDING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
+	Names of activity performed in the experiment.
+	Possible values : WALKING, SITTING, STANDING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS.
 	
 2-  subject_id
-	Unique ID number, identifying the person who performed the experience
+	Unique ID number, identifying the person who performed the experience.
 	Possible values: 1 ... 30
 	
 3-  activity_id
-	Unique ID number identifying an activity
+	Unique ID number identifying an activity.
 	Possible values : 1 ... 6
 	
 4-  tBodyAcc_mean_X
-	Time domain signal measuring the average by activity and by subject of the Body Acceleration on the X axis
+	Time domain signal measuring the average by activity and by subject of the Body Acceleration on the X axis.
 	Possible values : 0.2216 ... 0.3015
 	
 5-  tBodyAcc_mean_Y
-	Time domain signal measuring the average by activity and by subject of the Body Acceleration on the Y axis
+	Time domain signal measuring the average by activity and by subject of the Body Acceleration on the Y axis.
 	Possible values : -0.040514 ... -0.001308
 	
 6-  tBodyAcc_mean_Z
-	Time domain signal measuring the average by activity and by subject of the Body Acceleration on the Z axis
+	Time domain signal measuring the average by activity and by subject of the Body Acceleration on the Z axis.
 	Possible values : -0.15251 ... -0.07538
 	
 7-  tBodyAcc_std_X
-	Time domain signal measuring the average by activity and by subject of the Body Acceleration Standard deviation on the X axis
+	Time domain signal measuring the average by activity and by subject of the Body Acceleration Standard deviation on the X axis.
 	Possible values : -0.9961 ... 0.6269
 	
 8-  tBodyAcc_std_Y
-	Time domain signal measuring the average by activity and by subject of the Body Acceleration Standard deviation on the Y axis
+	Time domain signal measuring the average by activity and by subject of the Body Acceleration Standard deviation on the Y axis.
 	Possible values : -0.99024 ... 0.61694
 	
 9-  tBodyAcc_std_Z
-	Time domain signal measuring the average by activity and by subject of the Body Acceleration Standard deviation on the Z axis
+	Time domain signal measuring the average by activity and by subject of the Body Acceleration Standard deviation on the Z axis.
 	Possible values : -0.9877 ... 0.6090
 	
 10- tGravityAcc_mean_X
-	Time domain signal measuring the average by activity and by subject of the Gravity Acceleration on the X axis
+	Time domain signal measuring the average by activity and by subject of the Gravity Acceleration on the X axis.
 	Possible values : -0.6800 ... 0.9745
 	
 11- tGravityAcc_mean_Y
-	Time domain signal measuring the average by activity and by subject of the Gravity Acceleration on the X axis
+	Time domain signal measuring the average by activity and by subject of the Gravity Acceleration on the X axis.
 	Possible values : -0.47989 ... 0.95659
 	
 12- tGravityAcc_mean_Z
-	Time domain signal measuring the average by activity and by subject of the Gravity Acceleration on the X axis
+	Time domain signal measuring the average by activity and by subject of the Gravity Acceleration on the X axis.
 	Possible values : -0.49509 ... 0.95787
 	
 13- tGravityAcc_std_X
