@@ -1,7 +1,7 @@
 ##Coursera Data Science Project
 ==============================
 
-###Author: Henri MBIYA-NGANDU LUBOYA <hmbiyangandu@yahoo.fr>
+######Author: Henri MBIYA-NGANDU LUBOYA <hmbiyangandu@yahoo.fr>
 
 This project consist of merging a couple of datasets into one dataset and processing some operations 
 to get a final sub-dataset that contains the average of each variable for each activity and each subject. 
@@ -99,7 +99,11 @@ For that, the "rbind" function seem to the one that fits well
 	mergeData <- rbind(dataTrain,dataTest)
 
 8. Extracting mean and std columns(keep only mean and std columns)
-mergeData <- mergeData[,grepl("mean|std",features$V2, ignore.case=T)]
+At this step the "grepl" function is welcome. We ask grepl to match mean or std against the columns containing the labels of 
+columns we assign at step 5 above, where mean or std are found in the name of the column, grepl return TRUE otherwise FALSE
+We can though use that vector to exclude all the column in mergeData where the value returned by grepl is FALSE
+
+	mergeData <- mergeData[,grepl("mean|std",features$V2, ignore.case=T)]
 
 # Labeling Activities in the Dataset
 mergeData <- merge(mergeData,activityLabels, by.x="activity_id", by.y="activity_id", all=T)
