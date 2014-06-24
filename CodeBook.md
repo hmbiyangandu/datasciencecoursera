@@ -76,22 +76,40 @@ The project have been developed under R version 3.1.0 (2014-04-10), Platform: x8
 	Possible values : -0.49509 ... 0.95787
 	
 13- tGravityAcc_std_X
+	Time domain signal measuring the average by activity and by subject of the Gravity Acceleration Standard deviation on the X axis.
+	Possible values : -0.9968 ... -0.8296
 
 14- tGravityAcc_std_Y
+	Time domain signal measuring the average by activity and by subject of the Gravity Acceleration Standard deviation on the Y axis.
+	Possible values : -0.9942 ... -0.6436
 
 15- tGravityAcc_std_Z
+	Time domain signal measuring the average by activity and by subject of the Gravity Acceleration Standard deviation on the Z axis.
+	Possible values : -0.9910 ... -0.6102
 
 16- tBodyAccJerk_mean_X
+	Time domain signal measuring the average by activity and by subject of the Body Acceleration Jerk on the X axis.
+	Possible values : 0.04269 ... 0.13019 
 
 17- tBodyAccJerk_mean_Y
+	Time domain signal measuring the average by activity and by subject of the Body Acceleration Jerk on the Y axis.
+	Possible values : -0.0386872 ... 0.0568186
 
 18- tBodyAccJerk_mean_Z
+	Time domain signal measuring the average by activity and by subject of the Body Acceleration Jerk on the Z axis.
+	Possible values : -0.067458 ... 0.038053
 
 19- tBodyAccJerk_std_X
+	Time domain signal measuring the average by activity and by subject of the Body Acceleration Jerk Standard deviation on the X axis.
+	Possible values : -0.9946 ... 0.5443 
 
 20- tBodyAccJerk_std_Y
+	Time domain signal measuring the average by activity and by subject of the Body Acceleration Jerk Standard deviation on the Y axis.
+	Possible values : -0.9895 ... 0.3553
 
 21- tBodyAccJerk_std_Z
+	Time domain signal measuring the average by activity and by subject of the Body Acceleration Jerk Standard deviation on the Z axis.
+	Possible values : -0.99329 ... 0.03102
 
 22- tBodyGyro_mean_X
 
